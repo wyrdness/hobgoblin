@@ -1,10 +1,8 @@
 {
-  "category": "FAE_FOLKLORE",
-
   "meta": {
     "version": "1.0.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-01-14",
+    "last_updated": "2026-02-13",
     "repository": "https://github.com/wyrdness/hobgoblin",
     "maintainers": [
       {
@@ -18,313 +16,111 @@
       "content": "CC-BY-4.0"
     }
   },
-
   "phenomenon": {
     "id": "hobgoblin",
     "name": "Hobgoblin",
-    "aliases": [
-      {
-        "name": "Hob",
-        "region": "England",
-        "meaning": "Friendly sprite"
-      },
-      {
-        "name": "Robin Goodfellow",
-        "region": "England",
-        "meaning": "Famous hobgoblin, also known as Puck"
-      },
-      {
-        "name": "Puck",
-        "region": "England",
-        "meaning": "Mischievous hobgoblin from folklore and Shakespeare"
-      }
-    ],
-    "category": "FAE_FOLKLORE",
-    "subcategory": "Household Spirit",
+    "aliases": [],
+    "category": "|_MALEVOLENT_GOBLIN_(HOBGOBLIN_IS_FRIENDLY_VARIANT)_|",
+    "subcategory": "|",
     "tags": [
-      "english-folklore",
-      "household-spirit",
-      "helpful",
-      "mischievous",
-      "brownie-like",
-      "goblin-variant",
-      "trickster"
+      "folklore",
+      "mythology"
     ],
-    "status": "traditional_folklore",
+    "status": "documented",
     "description": {
-      "summary": "A friendly or mischievous goblin variant from English folklore, either a helpful household spirit or a harmless trickster.",
-      "full": "A hobgoblin is a variant of goblin from English folklore, distinguished by being friendly or merely mischievous rather than malevolent. The name derives from 'hob' (a friendly sprite) combined with 'goblin.' Hobgoblins fall into two types: helpful household spirits similar to brownies who assist with chores and protect the family, or mischievous tricksters who play pranks and confuse travelers but cause no serious harm. The most famous hobgoblin is Robin Goodfellow (Puck) from Shakespeare's A Midsummer Night's Dream. Modern usage has inverted the term's meaning, often using 'hobgoblin' to mean a scary goblin, opposite to its original friendly connotation."
+      "summary": "A hobgoblin is a variant of goblin from English folklore, distinguished by being **friendly or merely mischievous** rather than malevolent.",
+      "full": "A hobgoblin is a variant of goblin from English folklore, distinguished by being **friendly or merely mischievous** rather than malevolent. The name derives from \\\"hob\\\" (a friendly sprite) combined with \\\"goblin.\\\" Hobgoblins fall into two types: 1. **Helpful household spirits**: Similar to brownies who assist with chores and protect the family 2. **Mischievous tricksters**: Play pranks and confuse travelers but cause no serious harm The most famous hobgoblin is **Robin Goodfellow (Puck)** from Shakespeare's *A Midsummer Night's Dream*. > ⚠️ **Meaning Shift**: Modern usage has often inverted this term's meaning, using \\\"hobgoblin\\\" to mean a scary goblin — the opposite of its original friendly connotation."
     },
     "etymology": {
-      "origin": "From 'Hob' (a friendly sprite or nickname for Robert/Robin) + 'goblin'",
-      "meaning": "Friendly or household goblin",
-      "first_use": "16th century England",
-      "note": "Originally denoted friendly variant; modern usage often reverses this to mean scary goblin"
+      "origin": "Unknown",
+      "meaning": "To be documented",
+      "first_use": "Unknown"
     }
   },
-
   "classification": {
     "taxonomy": {
-      "category": "FAE_FOLKLORE",
-      "type": "Household Spirit / Goblin Variant",
-      "subtype": "Friendly or Mischievous Entity",
-      "variant": "English"
+      "category": "|_MALEVOLENT_GOBLIN_(HOBGOBLIN_IS_FRIENDLY_VARIANT)_|",
+      "type": "|",
+      "subtype": "Unknown",
+      "variant": "Unknown"
     },
-    "related_phenomena": [
-      {
-        "id": "goblin",
-        "name": "Goblin",
-        "relationship": "parent_category",
-        "description": "Malevolent goblin (hobgoblin is friendly variant)"
-      },
-      {
-        "id": "brownie",
-        "name": "Brownie",
-        "relationship": "similar",
-        "description": "Scottish household spirit, very similar to helpful hobgoblin"
-      },
-      {
-        "id": "puck",
-        "name": "Puck",
-        "relationship": "famous_example",
-        "description": "Robin Goodfellow, most famous hobgoblin"
-      }
-    ]
+    "related_phenomena": []
   },
-
   "characteristics": {
     "physical": {
-      "appearance": [
-        {
-          "feature": "Small size",
-          "description": "Small humanoid, similar to goblins",
-          "frequency": "common"
-        },
-        {
-          "feature": "Less grotesque",
-          "description": "More pleasant appearance than malevolent goblins",
-          "frequency": "common"
-        },
-        {
-          "feature": "Variable appearance",
-          "description": "Can appear as small man, animal, or invisible",
-          "frequency": "variable"
-        }
-      ],
-      "morphology": "Small humanoid, less grotesque than malevolent goblins, sometimes invisible"
+      "features": [],
+      "morphology": "See README.md for detailed physical description"
     },
-    "abilities": [
-      {
-        "ability": "Household chores",
-        "description": "Help with cleaning, cooking, farm work at night",
-        "frequency": "common",
-        "evidence_level": "folklore",
-        "type": "helpful"
-      },
-      {
-        "ability": "Shape-shifting",
-        "description": "Can take various forms, especially animal shapes",
-        "frequency": "occasional",
-        "evidence_level": "folklore",
-        "type": "trickster"
-      },
-      {
-        "ability": "Invisibility",
-        "description": "Can become invisible at will",
-        "frequency": "common",
-        "evidence_level": "folklore",
-        "type": "both"
-      },
-      {
-        "ability": "Minor magic",
-        "description": "Small magical tricks, illusions, pranks",
-        "frequency": "common",
-        "evidence_level": "folklore",
-        "type": "trickster"
-      },
-      {
-        "ability": "Protection",
-        "description": "Guard household from harm, warn of danger",
-        "frequency": "common",
-        "evidence_level": "folklore",
-        "type": "helpful"
-      }
-    ],
+    "abilities": [],
     "behavior": {
-      "activity_period": "nocturnal",
-      "disposition": "friendly to neutral",
-      "types": [
-        {
-          "type": "Helpful household hobgoblin",
-          "behavior": "Assists with chores, protects family, like a brownie",
-          "temperament": "benevolent"
-        },
-        {
-          "type": "Trickster hobgoblin",
-          "behavior": "Plays pranks, confuses travelers, minor mischief",
-          "temperament": "mischievous but not malevolent"
-        }
-      ],
-      "patterns": [
-        "Work at night while household sleeps",
-        "Expect respect but not payment",
-        "Offended by gifts of clothing (will leave)",
-        "Play harmless pranks",
-        "Protect those who treat them well"
-      ]
+      "activity_period": "unknown",
+      "disposition": "unknown",
+      "habitat_preference": []
     }
   },
-
-  "cultural": {
-    "folklore": {
-      "traditions": [
-        "English household spirit traditions",
-        "Rural farm folklore",
-        "Shakespearean fairy lore"
-      ],
-      "beliefs": [
-        "Hobgoblins help deserving households",
-        "Offended by payment or gifts of clothing",
-        "Expect respect and small offerings (food, drink)",
-        "Will leave if insulted or given clothes",
-        "Can be mischievous but not dangerous"
-      ],
-      "famous_examples": [
-        {
-          "name": "Robin Goodfellow (Puck)",
-          "source": "Shakespeare's A Midsummer Night's Dream",
-          "description": "Most famous hobgoblin, mischievous fairy servant of Oberon",
-          "characteristics": "Trickster, shape-shifter, prankster but ultimately benevolent"
-        },
-        {
-          "name": "Hob of Runswick Bay",
-          "source": "Yorkshire folklore",
-          "description": "Helpful household hobgoblin",
-          "characteristics": "Assisted with farm work, left when given clothing"
-        }
-      ]
-    },
-    "distinction_from_goblin": {
-      "traditional": "Goblin = malevolent, Hobgoblin = friendly/neutral",
-      "modern_reversal": "Modern usage often treats 'hobgoblin' as scarier or larger goblin (opposite of original meaning)",
-      "note": "Original distinction largely lost in modern popular culture"
-    },
-    "household_spirit_tradition": {
-      "similarities_to_brownie": [
-        "Works at night on household chores",
-        "Expects respect and small offerings",
-        "Offended by gifts of clothing",
-        "Protects household",
-        "Will leave if insulted"
-      ],
-      "offerings": [
-        "Milk or cream",
-        "Bread",
-        "Porridge",
-        "Small portion of household meal"
-      ],
-      "taboos": [
-        "Never offer payment",
-        "Never give clothing (causes them to leave)",
-        "Never watch them work",
-        "Never insult or criticize their work",
-        "Never speak of them disrespectfully"
-      ]
-    },
-    "popular_culture": {
-      "literature": [
-        "Shakespeare's A Midsummer Night's Dream (Puck/Robin Goodfellow)",
-        "Milton's L'Allegro (references Robin Goodfellow)",
-        "Traditional English ballads and tales"
-      ],
-      "modern_interpretations": [
-        "Marvel Comics (Hobgoblin villain - reverses friendly meaning)",
-        "D&D and fantasy games (often more organized/militant goblins)",
-        "Often confused with or used as synonym for goblin"
-      ],
-      "meaning_shift": "Modern popular culture has largely inverted the original meaning, now often using 'hobgoblin' for scary or dangerous goblins"
-    }
-  },
-
   "distribution": {
     "range": {
-      "description": "English folklore, particularly rural and household traditions",
-      "continents": ["Europe"],
-      "regions": [
-        "England",
-        "Particularly Yorkshire and rural areas"
-      ]
+      "description": "Unknown",
+      "continents": [],
+      "countries": [],
+      "regions": []
+    },
+    "hotspots": [],
+    "temporal": {
+      "first_recorded": {
+        "date": "Unknown",
+        "circa": true,
+        "source": "Traditional folklore"
+      }
     }
   },
-
   "history": {
     "origins": {
-      "cultural_roots": "English household spirit and goblin folklore traditions",
-      "earliest_accounts": "16th century documented references",
-      "folklore_connections": "Related to brownie traditions and broader fairy folklore"
+      "cultural_roots": "Unknown",
+      "earliest_accounts": "See README.md for historical details",
+      "folklore_connections": "Unknown"
     },
-    "timeline": [
-      {
-        "date": "16th century",
-        "event": "Term 'hobgoblin' in use",
-        "significance": "Distinguishes friendly goblins from malevolent ones",
-        "source": "English folklore"
-      },
-      {
-        "date": "1595-1596",
-        "event": "A Midsummer Night's Dream",
-        "significance": "Shakespeare popularizes Robin Goodfellow/Puck as famous hobgoblin",
-        "source": "William Shakespeare"
-      },
-      {
-        "date": "1628",
-        "event": "Milton references Robin Goodfellow",
-        "significance": "Further literary establishment of hobgoblin concept",
-        "source": "John Milton, L'Allegro"
-      },
-      {
-        "date": "Modern era",
-        "event": "Meaning inversion",
-        "significance": "Popular culture shifts 'hobgoblin' to mean scary goblin",
-        "source": "Comic books, games, modern fantasy"
-      }
-    ]
+    "timeline": []
   },
-
-  "modern_interpretation": {
-    "original_meaning": "Friendly or mischievous goblin, helpful household spirit",
-    "modern_usage": "Often used to mean scary, dangerous, or militaristic goblin (opposite of original)",
-    "examples_of_shift": [
-      "Marvel's Hobgoblin: supervillain (evil)",
-      "D&D hobgoblins: militaristic, organized, larger goblins (dangerous)",
-      "Popular usage: 'hobgoblin' often means something frightening"
-    ],
-    "preservation_of_original": "Original friendly meaning preserved mainly in folklore scholarship and traditional literature"
+  "sightings": {
+    "statistics": {
+      "total_documented": 0,
+      "verified": 0,
+      "disputed": 0,
+      "debunked": 0
+    },
+    "notable": [],
+    "database_path": "./sightings/"
   },
-
-  "sources": [
-    {
-      "id": "shakespeare-1595",
-      "type": "play",
-      "title": "A Midsummer Night's Dream",
-      "authors": ["William Shakespeare"],
-      "date": "1595-1596"
+  "evidence": {
+    "physical": [],
+    "photographic": [],
+    "video": [],
+    "audio": [],
+    "trace": []
+  },
+  "theories": {
+    "paranormal": [],
+    "scientific": [],
+    "skeptical": []
+  },
+  "cultural": {
+    "folklore": {
+      "traditions": [],
+      "stories": [],
+      "beliefs": "See README.md for cultural context"
     },
-    {
-      "id": "briggs-1976",
-      "type": "book",
-      "title": "A Dictionary of Fairies",
-      "authors": ["Katharine Briggs"],
-      "publication": "Penguin Books",
-      "date": "1976"
-    },
-    {
-      "id": "keightley-1850",
-      "type": "book",
-      "title": "The Fairy Mythology",
-      "authors": ["Thomas Keightley"],
-      "publication": "H.G. Bohn",
-      "date": "1850"
+    "popular_culture": {
+      "literature": [],
+      "film_tv": [],
+      "games": [],
+      "other": []
     }
-  ]
+  },
+  "research": {
+    "researchers": [],
+    "organizations": [],
+    "ongoing_studies": "None documented"
+  },
+  "sources": []
 }
