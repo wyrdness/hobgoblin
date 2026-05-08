@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/hobgoblin",
     "maintainers": [
       {
@@ -16,72 +16,128 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "hobgoblin",
     "name": "Hobgoblin",
-    "aliases": [],
-    "category": "|_MALEVOLENT_GOBLIN_(HOBGOBLIN_IS_FRIENDLY_VARIANT)_|",
-    "subcategory": "|",
+    "aliases": [
+      { "name": "Hob", "language": "English", "region": "Northern England", "meaning": "A familiar diminutive of 'Robert', used for household sprites" },
+      { "name": "Robin Goodfellow", "language": "English", "region": "England", "meaning": "Most famous individual hobgoblin; identified with Puck" },
+      { "name": "Puck", "language": "English", "region": "England", "meaning": "Mischievous sprite of English folklore identified by Shakespeare with the hobgoblin" },
+      { "name": "Dobby", "language": "English", "region": "Lancashire and Yorkshire" },
+      { "name": "Bauchan", "language": "Scottish Gaelic", "region": "Scottish Highlands" },
+      { "name": "Bwbach", "language": "Welsh", "region": "Wales" }
+    ],
+    "category": "FAE_FOLKLORE",
+    "subcategory": "Household sprite / mischievous sprite of British folklore",
     "tags": [
-      "folklore",
-      "mythology"
+      "british-folklore",
+      "household-spirit",
+      "fairy",
+      "english-folklore",
+      "trickster",
+      "shapeshifter",
+      "shakespeare",
+      "hob",
+      "goblin"
     ],
     "status": "documented",
     "description": {
-      "summary": "A hobgoblin is a variant of goblin from English folklore, distinguished by being **friendly or merely mischievous** rather than malevolent.",
-      "full": "A hobgoblin is a variant of goblin from English folklore, distinguished by being **friendly or merely mischievous** rather than malevolent. The name derives from \\\"hob\\\" (a friendly sprite) combined with \\\"goblin.\\\" Hobgoblins fall into two types: 1. **Helpful household spirits**: Similar to brownies who assist with chores and protect the family 2. **Mischievous tricksters**: Play pranks and confuse travelers but cause no serious harm The most famous hobgoblin is **Robin Goodfellow (Puck)** from Shakespeare's *A Midsummer Night's Dream*. > ⚠️ **Meaning Shift**: Modern usage has often inverted this term's meaning, using \\\"hobgoblin\\\" to mean a scary goblin — the opposite of its original friendly connotation."
+      "summary": "A small, hairy household sprite of English and broader British folklore, originally helpful or merely mischievous and only later conflated with malevolent goblins.",
+      "full": "A hobgoblin is a small humanoid spirit of English folklore, traditionally distinguished from goblins by being friendly or merely mischievous rather than malevolent. The first element 'hob' (attested in English by around 1530) is a familiar diminutive of 'Robert' and was used for household sprites associated with the hearth — particularly the 'hob', the flat metal shelf or recess beside a fireplace. Hobgoblins are typically described as small, hairy, often dressed in rags, and attached to a particular farm or household, performing nightly chores in exchange for offerings of milk or bread. Like brownies, they may turn destructive (becoming a 'boggart' in some traditions) if mistreated or formally paid. The most famous hobgoblin is Robin Goodfellow, identified by Shakespeare with Puck in A Midsummer Night's Dream (c. 1595). After the Reformation and the gradual Christianisation of English folklore, the term 'hobgoblin' shifted in meaning, drifting toward the modern sense of a small malevolent goblin. Regional names for hobgoblin-like figures include Dobby in Lancashire and Yorkshire, the Scottish bauchan, and the Welsh bwbach."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Middle English compound from 'hob' (a familiar diminutive of the personal name 'Robert', used for household sprites) and 'goblin' (a small malevolent or mischievous creature, ultimately from medieval Latin gobelinus).",
+      "meaning": "Originally 'a hob's goblin' or 'goblin of the hob (hearth)', i.e. a household sprite. The modern sense has often shifted toward 'a small frightening goblin', inverting the original friendly connotation.",
+      "first_use": "'Hob' as a name for a household sprite is attested by c. 1530 in English."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "|_MALEVOLENT_GOBLIN_(HOBGOBLIN_IS_FRIENDLY_VARIANT)_|",
-      "type": "|",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "FAE_FOLKLORE",
+      "type": "Household / domestic sprite",
+      "subtype": "Hob / brownie family",
+      "variant": "British Isles"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "brownie", "name": "Brownie", "relationship": "similar", "description": "Helpful Scottish household sprite very close in role and behaviour" },
+      { "id": "puck", "name": "Puck", "relationship": "subset", "description": "Mischievous English sprite identified by Shakespeare as a hobgoblin" },
+      { "id": "boggart", "name": "Boggart", "relationship": "counterpart", "description": "Malevolent or hostile counterpart to a household hobgoblin in northern English tradition" },
+      { "id": "goblin", "name": "Goblin", "relationship": "related", "description": "Generic small malevolent humanoid sprite; modern usage has partly conflated the two" },
+      { "id": "bauchan", "name": "Bauchan", "relationship": "regional_variant", "description": "Scottish Highland equivalent of the hobgoblin" },
+      { "id": "bwbach", "name": "Bwbach", "relationship": "regional_variant", "description": "Welsh equivalent of the hobgoblin" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.3, "max": 1.0, "unit": "meters", "confidence": "low" },
+      "coloration": ["brown", "earthy", "ragged-clothed", "hairy"],
+      "features": [
+        { "feature": "Small humanoid form", "description": "Diminutive humanoid shape, typically waist-high or smaller", "frequency": "always" },
+        { "feature": "Hairy or shaggy body", "description": "Often described as hairy, sometimes nearly naked under tatters of clothing", "frequency": "common" },
+        { "feature": "Ragged clothing", "description": "Tatters, ill-fitting cast-offs, or simple peasant dress; gifts of new clothing are traditionally said to drive a hob away", "frequency": "common" },
+        { "feature": "Trickster appearance", "description": "Mischievous, grinning face; in the Robin Goodfellow tradition, sometimes shown with a broom or lantern", "frequency": "occasional" }
+      ],
+      "morphology": "Small hairy humanoid; physical descriptions vary widely between regions and between literary and oral traditions."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Performs household chores", "description": "Cleans, threshes, dusts, churns butter, and tidies during the night, in exchange for milk or bread", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Shape-shifting", "description": "Many hobgoblin tales, especially the Robin Goodfellow stories, depict the sprite changing form to play tricks", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Mischievous tricks", "description": "Pinches, hides objects, leads travellers astray, sours milk, and pulls the bedclothes off sleepers", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Departure if formally paid or clothed", "description": "Will leave a household forever if rewarded with new clothes or an explicit wage instead of customary offerings", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "variable",
+      "social_structure": "solitary",
+      "habitat_preference": ["household hearths", "farmyards", "barns and outhouses", "rural villages"],
+      "diet": "Traditional offerings of milk, cream, bread, or porridge left out at night.",
+      "patterns": [
+        "Attaches itself to a single house or farm, sometimes for generations",
+        "Active at night, withdrawing before dawn",
+        "Helpful when respected; mischievous or destructive when mocked, watched, or formally rewarded"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Hobgoblin and hob traditions are concentrated in England — particularly the north and Midlands — and in adjacent parts of the British Isles. Closely related figures appear in Scottish, Welsh, and Manx folklore.",
+      "continents": ["Europe"],
+      "countries": ["United Kingdom", "Ireland"],
+      "regions": ["England (especially the North and Midlands)", "Scotland", "Wales", "Isle of Man"]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Early 16th century",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "'Hob' attested as a name for a household sprite in English by c. 1530"
+      },
+      "peak_activity_periods": [
+        { "period": "16th–18th centuries", "description": "Robin Goodfellow chapbooks, Reformation-era polemics, and Shakespeare popularise the hobgoblin in English literary culture" },
+        { "period": "19th century", "description": "Romantic and Victorian folklorists (e.g. Keightley, later Briggs) systematically catalogue British hob and brownie traditions" }
+      ],
+      "seasonal_patterns": "Some traditions tie hobgoblin activity to the agricultural year, particularly threshing and dairying seasons."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Hobgoblin lore grows out of long-standing British and Anglo-Saxon traditions of household and farmstead spirits, fused with medieval European goblin and fairy traditions during and after the Christianisation of England.",
+      "earliest_accounts": "'Hob' is attested in English as a name for a household sprite by c. 1530. The Robin Goodfellow / Puck strand is securely documented in Tudor and early Stuart literature.",
+      "folklore_connections": "Closely linked to brownies, boggarts, lobs, and the broader 'fairy' (faerie) tradition of the British Isles."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1530-01-01", "event": "Earliest known English usage of 'hob' as a name for a household sprite", "significance": "Establishes the linguistic foundation of the hobgoblin tradition", "source": "Etymological surveys cited in the Wikipedia article on hobgoblin" },
+      { "date": "1595-01-01", "event": "William Shakespeare composes A Midsummer Night's Dream, identifying Puck with Robin Goodfellow and the hobgoblin", "significance": "The hobgoblin enters elite English literary culture and is fixed as a friendly trickster", "source": "Shakespeare, A Midsummer Night's Dream (c. 1595)" },
+      { "date": "1628-01-01", "event": "Anonymous chapbook Robin Good-Fellow, His Mad Prankes and Merry Jests printed (circulating earlier in oral tradition)", "significance": "Popularises Robin Goodfellow as the canonical hobgoblin of English folklore", "source": "Robin Good-Fellow, His Mad Prankes and Merry Jests (1628)" }
+    ],
+    "modern_era": "Hobgoblins remain a stock figure of English-speaking fantasy fiction, role-playing games, and children's literature. Modern fantasy gaming (most influentially Dungeons & Dragons from the 1970s onward) has further entrenched the inverted, malevolent sense of 'hobgoblin' as a larger, more militaristic goblin, pulling the term still further away from its original household-sprite meaning."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +148,98 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "hobgoblin-evidence-robin-goodfellow-1628",
+        "type": "chapbook",
+        "name": "Robin Good-Fellow, His Mad Prankes and Merry Jests (1628)",
+        "date": "1628",
+        "description": "Early printed chapbook collecting tales of Robin Goodfellow as a hobgoblin trickster of English folklore.",
+        "status": "unverified",
+        "analysis": "A literary record of folkloric tradition, not an evidentiary claim about a literal entity.",
+        "source": "Robin Good-Fellow, His Mad Prankes and Merry Jests (1628)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Domestic fairy / household spirit",
+        "description": "In traditional belief, the hobgoblin is one of a class of small fae or spirit beings attached to particular households, neither devil nor angel but a separate order of being subject to its own customs and taboos.",
+        "proponents": ["Traditional British folk belief", "Katharine Briggs (later folklore scholarship)"],
+        "evidence_cited": ["Continuity of household-sprite traditions across the British Isles", "Stable folk practices around offerings and taboos"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Folkloric personification of household labour",
+        "description": "Hobgoblin tales personify the unseen domestic and agricultural labour of pre-industrial households, providing supernatural framings for nocturnal sounds, missing objects, and unexplained tidying or mess.",
+        "proponents": ["Folklore scholars (Keightley, Briggs, and successors)"],
+        "evidence_cited": ["Embedment of hobgoblin behaviour in everyday domestic routine", "Variation of hobgoblin lore with regional economic and household practices"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "English household-sprite tradition (hob, lob, hobthrust)",
+        "Robin Goodfellow tradition",
+        "Lancashire and Yorkshire 'Dobby' traditions"
+      ],
+      "stories": [
+        "The hob of Hart Hall and similar northern English farmstead tales",
+        "Robin Goodfellow chapbook tales (16th–17th centuries)",
+        "Tales of hobgoblins driven away by gifts of new clothes"
+      ],
+      "beliefs": "Treated as a real category of household spirit in traditional belief, with codified rules of offerings, courteous conduct, and avoidance of formal payment."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "A Midsummer Night's Dream — William Shakespeare (c. 1595)",
+        "Robin Good-Fellow, His Mad Prankes and Merry Jests (1628)",
+        "The Fairy Mythology — Thomas Keightley (1828)",
+        "An Encyclopedia of Fairies — Katharine Briggs (1976)"
+      ],
+      "film_tv": [
+        "Multiple film and stage adaptations of A Midsummer Night's Dream",
+        "Hobgoblins (1988, low-budget cult film, modern monstrous-goblin sense)"
+      ],
+      "games": [
+        "Dungeons & Dragons (1974–) — codifies the modern monstrous 'hobgoblin' as a larger goblinoid",
+        "Numerous fantasy video games featuring hobgoblins as a creature class"
+      ],
+      "music": [],
+      "other": [
+        "Hobgoblin Beer (Wychwood Brewery, UK) — a famous modern commercial use of the term"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Thomas Keightley", "affiliation": "Independent folklorist", "contribution": "The Fairy Mythology (1828); early systematic survey of British and European fairy lore including hobgoblins", "period": "19th century" },
+      { "name": "Katharine Briggs", "affiliation": "Independent folklorist", "contribution": "Comprehensive cataloguing of British fairy and hob traditions, including An Encyclopedia of Fairies (1976)", "period": "20th century" }
+    ],
+    "organizations": [
+      { "name": "The Folklore Society", "url": "https://folklore-society.com", "focus": "Academic study of British and European folklore" }
+    ],
+    "ongoing_studies": "Continuing academic study within British folklore and fairy-lore scholarship; the hobgoblin remains a standard topic in surveys of British fairy traditions."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-hobgoblin-2026", "type": "website", "title": "Hobgoblin", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hobgoblin", "accessed": "2026-05-07" },
+    { "id": "shakespeare-mnd", "type": "book", "title": "A Midsummer Night's Dream", "authors": ["William Shakespeare"], "publication": "First published in quarto, London", "date": "1600" },
+    { "id": "keightley-1828", "type": "book", "title": "The Fairy Mythology", "authors": ["Thomas Keightley"], "publication": "London", "date": "1828" },
+    { "id": "briggs-1976", "type": "book", "title": "An Encyclopedia of Fairies: Hobgoblins, Brownies, Bogies, and Other Supernatural Creatures", "authors": ["Katharine Briggs"], "publication": "Pantheon Books", "date": "1976" }
+  ]
 }
